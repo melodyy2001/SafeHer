@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/safeherlogo"
+        android:id="@+id/logo"
+        android:layout_centerInParent="true">
+
+    </ImageView>
+
 </RelativeLayout>

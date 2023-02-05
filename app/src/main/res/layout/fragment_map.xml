@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,12 +10,69 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/map_image">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/pinText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="32dp"
+            android:text="Add A Pin"
+            android:textSize="24sp" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text = "Map" />
+            android:text = "Address"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="450dp"
+            android:id = "@+id/addressText"/>
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="520dp"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/addressEntry"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="470dp"
+            android:hint="Enter Location"
+            android:inputType="textNoSuggestions" />
+        <EditText
+            android:id="@+id/descriptionEntry"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="540dp"
+            android:hint="Enter reason(s) for report"
+            android:inputType="textNoSuggestions" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:layout_marginStart="32dp"
+            android:text = "Submit">
+
+        </Button>
+
 
     </RelativeLayout>
 
 
-</FrameLayout>
+</ScrollView>

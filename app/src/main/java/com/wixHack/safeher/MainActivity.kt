@@ -5,9 +5,7 @@ import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.wixHack.safeher.adapters.ViewPagerAdapter
-import com.wixHack.safeher.fragments.HomeFragment
-import com.wixHack.safeher.fragments.MapFragment
-import com.wixHack.safeher.fragments.NewsFragment
+import com.wixHack.safeher.fragments.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +17,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpTabs() {
        val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(HomeFragment(), "Home")
-        adapter.addFragment(MapFragment(), "Map")
-        adapter.addFragment(NewsFragment(), "News")
+        adapter.addFragment(HomeFragment(), "")
+        adapter.addFragment(MapFragment(), "")
+        adapter.addFragment(NewsFragment(), "") // Resources and Help
+        adapter.addFragment(EmergencyServiceFragment(), "")
+        adapter.addFragment(AboutUsFragment(), "")
         val viewPager = findViewById<ViewPager>(R.id.viewpager)
         viewPager.adapter = adapter
         val tabs = findViewById<TabLayout>(R.id.tabs)
@@ -29,7 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         tabs.getTabAt(0)!!.setIcon(R.drawable.ic_baseline_home_24)
         tabs.getTabAt(1)!!.setIcon(R.drawable.ic_baseline_map_24)
-        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_baseline_notifications_24)
+        tabs.getTabAt(2)!!.setIcon(R.drawable.ic_baseline_help_24)
+        tabs.getTabAt(3)!!.setIcon(R.drawable.ic_baseline_emergency_24)
+        tabs.getTabAt(4)!!.setIcon(R.drawable.ic_baseline_help_24)
+
 
 
 

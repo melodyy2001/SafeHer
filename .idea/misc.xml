@@ -6,8 +6,9 @@
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.16312056737588654" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.32135416666666666" />
-        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.33541666666666664" />
+        <entry key="app/src/main/res/layout/fragment_about_us.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.10740740740740741" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_news.xml" value="0.33541666666666664" />
       </map>
     </option>
